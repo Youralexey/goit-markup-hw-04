@@ -136,6 +136,16 @@ body {
 .main-mail {
   color: var(--title-text-color);
 }
+/* .main-mail::before {
+  content: "";
+  display: flex;
+}
+.svg-mail {
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 12px;
+  fill: #757575; */
 .main-tel {
   color: var(--title-text-color);
 }
@@ -156,10 +166,16 @@ body {
 /*  hero  */
 
 .hero {
+  /* max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto; */
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--third-bg-color);
+  background-color: #c4c4c4;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   padding-bottom: 30px;
