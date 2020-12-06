@@ -134,13 +134,19 @@ body {
 }
 
 .main-mail {
-  color: var(--title-text-color);
-}
-.main-mail {
   content: "";
   display: flex;
   align-items: center;
   justify-content: center;
+
+  color: var(--title-text-color);
+}
+.main-tel {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--title-text-color);
 }
 
 .svg-mail {
@@ -151,10 +157,10 @@ body {
   height: 12px;
   fill: #757575;
 }
-.svg-mail:hover,
+/* .svg-mail:hover,
 .svg-mail:focus {
   fill: #2196f3;
-}
+} */
 
 .svg-tel {
   align-items: center;
@@ -164,21 +170,21 @@ body {
   height: 16px;
   fill: #757575;
 }
-.svg-tel:hover,
-.svg-tel:focus {
-  fill: #2196f3;
+.main-mail:hover,
+.main-mail:focus {
+  color: var(--accent-color);
+}
+.main-mail:hover .svg-mail {
+  fill: currentColor;
 }
 .main-tel:hover,
 .main-tel:focus {
   color: var(--accent-color);
 }
-.main-tel {
-  color: var(--title-text-color);
+.main-tel:hover .svg-tel {
+  fill: currentColor;
 }
-.main-mail:hover,
-.main-mail:focus {
-  color: var(--accent-color);
-}
+
 .current-nav-link {
   color: var(--accent-color);
 }
@@ -198,9 +204,10 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero.png);
+    url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .hero-title {
   padding-bottom: 30px;
