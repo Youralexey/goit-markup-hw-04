@@ -94,6 +94,9 @@ body {
 }
 
 .navigation-list-link {
+  /* padding-top: 32px;
+  padding-bottom: 32px; - 
+  для большей области наведения*/
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
@@ -101,6 +104,24 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
+.current-nav-link {
+  color: var(--accent-color);
+}
+
+.current-nav-link::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  top: 76px;
+  left: 453;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -182,10 +203,6 @@ body {
 }
 .main-tel:hover .svg-tel {
   fill: currentColor;
-}
-
-.current-nav-link {
-  color: var(--accent-color);
 }
 
 /* End Navigation list*/
